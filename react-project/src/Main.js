@@ -45,16 +45,15 @@ class Main extends React.Component {
       })} */}
 
             <HornedBeast title={arr[0].title} 
-            // image_url={arr[0].image_url} 
-            src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"
+            imageUrl={arr[0].image_url} 
             description={arr[0].description}/>
 
             <HornedBeast title={arr[1].title} 
-            image_url={arr[1].image_url} 
+            imageUrl={arr[1].image_url} 
             description={arr[1].description}/>
 
             <HornedBeast title={arr[2].title} 
-            image_url={arr[2].image_url} 
+            imageUrl={arr[2].image_url} 
             description={arr[2].description}/>
 
             
