@@ -24,7 +24,7 @@ this.setState({clickCounter: this.state.clickCounter + 1})
     return(
 
       addimg && addimg.map( card => 
-        <HornedBeast title={card.title} image_url={card.image_url}/>
+        <HornedBeast  image_url={card.image_url} title={card.title} description={card.description} keyword={card.keyword} horns={card.horns}/>
       )
       
     )

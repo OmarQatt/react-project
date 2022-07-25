@@ -27,6 +27,9 @@ class HornedBeast extends React.Component {
 <Card style={{ width: '18rem'}}>
       <Card.Img src={this.props.image_url} width="200" onClick={this.handleClick} />
       <Card.Body>
+      <Card.Text style={{ color: 'black' }}>
+        {this.props.title}
+        </Card.Text>
         <Card.Title style={{ color: 'black' }}>My Favorites Beast:{this.state.clickCounter}</Card.Title>
         <Card.Text style={{ color: 'black' }}>
         {this.props.description}
