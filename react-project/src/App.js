@@ -1,16 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from "../src/Header.js"
-import Footer from "../src/Footer.js"
-import Main from "../src/Main.js"
+import Header from "./component/Header.js"
+import Footer from "./component/Footer.js"
+import Main from './component/Main';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
-    <div>
-      <header className="App-header">
-          <Header/>
-          <Main/>
-          <Footer/>
-      </header>
+    <div className="App-header">
+      <br/>
+      <div><strong><Header/></strong></div>
+     <br/>
+
+
+<div><Main/></div>
+
+
+
+     <br/>
+     <div><Footer/></div>
+          
+          
     </div>
   );
 }
