@@ -1,6 +1,8 @@
 import React from "react";
 import App from "./App"
 import HornedBeast from "./HornedBeast";
+
+
 const arr=[{
     "_id": 1,
     "image_url": "http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg",
@@ -27,23 +29,11 @@ const arr=[{
     "keyword": "unicorn",
     "horns": 1
 }]
+
 class Main extends React.Component {
     render() {
        return (
-        <div>
-            {/* {arr.map(title => {
-        return <HornedBeast title={arr[0].title} 
-        image_url={arr[0].image_url} 
-        src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"
-        description={arr[0].description}/>;
-      })}
-      {arr.map(image_url => {
-        return <div key={image_url[0]}>{image_url[2]}</div>;
-      })}
-      {arr.map(description => {
-        return <div key={description[0]}>{description[0]}</div>;
-      })} */}
-
+        <div>     
             <HornedBeast title={arr[0].title} 
             imageUrl={arr[0].image_url} 
             description={arr[0].description}/>
@@ -54,17 +44,11 @@ class Main extends React.Component {
 
             <HornedBeast title={arr[2].title} 
             imageUrl={arr[2].image_url} 
-            description={arr[2].description}/>
-
-            
-            
+            description={arr[2].description}/> 
         </div>
        )
             
     }
-
-
-
 }
 
 export default Main;
