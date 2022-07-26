@@ -21,13 +21,6 @@ class HornedBeast extends React.Component {
       
       <div >
        
-{/* <h2>{this.props.title}</h2>
-<img src={this.props.imageUrl} alt={this.props.imgAlt} width="500" />
-<p>{this.props.description}</p>
-<p>{this.props.keyword}</p>
-<p>{this.props.horns}</p>
-     */}
-     {/* child */}
 <Card style={{ width: '18rem',padding: 10}}>
       <Card.Img src={this.props.image_url} width="200" onClick={this.handleClick} />
       <Card.Body>
