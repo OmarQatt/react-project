@@ -4,6 +4,8 @@ import addimg from '../addimg.json'
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import App from '../App.js';
+import SelectedBeast from './SelectedBeast.js'
 class Main extends React.Component {
 constructor(props) {
   super(props);
@@ -24,6 +26,7 @@ this.setState({clickCounter: this.state.clickCounter + 1})
       addimg && addimg.map( card =>   
           <Col> 
         <HornedBeast image_url={card.image_url} title={card.title} description={card.description} keyword={card.keyword} horns={card.horns}  />
+        <SelectedBeast image_url={card.image_url} title={card.title} description={card.description} keyword={card.keyword} horns={card.horns}/>
         </Col>  
       )
     }
