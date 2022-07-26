@@ -3,9 +3,10 @@ import Header from "./component/Header.js"
 import Footer from "./component/Footer.js"
 import Main from './component/Main';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import SelectedBeast from './component/SelectedBeast';
 function App() {
   return (
-    <div className="App-header">
+    <div>
       <br/>
       <div><strong><Header/></strong></div>
      <br/>
