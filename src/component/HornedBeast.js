@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import SelectedBeast from "./SelectedBeast";
 class HornedBeast extends React.Component {
   constructor(props) {
     super(props);
@@ -21,8 +22,8 @@ class HornedBeast extends React.Component {
       
       <div >
        
-<Card style={{ width: '18rem',padding: 10}}>
-      <Card.Img src={this.props.image_url} width="200" onClick={this.handleClick} />
+<Card style={{ width: '18rem',padding: 10}} show={this.state.show}>
+      <Card.Img src={this.props.image_url} width="200" onClick={this.handleClick}/>
       <Card.Body>
       <Card.Text style={{ color: 'black' }}>
         {this.props.title}
@@ -35,11 +36,9 @@ class HornedBeast extends React.Component {
         <p>{this.props.keyword}</p>
         <p>{this.props.horns}</p>
         </Card.Text>
-        <Button variant="primary" style={{margin: '5px'}}>Go somewhere</Button>
-        <Button variant="primary" style={{ margin: '5px' }}>Go somewhere</Button>
       </Card.Body>
     </Card>
-  
+ 
 </div>
 
 
