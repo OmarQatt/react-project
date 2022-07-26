@@ -24,9 +24,7 @@ this.setState({clickCounter: this.state.clickCounter + 1})
       addimg && addimg.map( card =>   
           <Col> 
         <HornedBeast image_url={card.image_url} title={card.title} description={card.description} keyword={card.keyword} horns={card.horns}  />
-        </Col>
-        
-       
+        </Col>  
       )
     }
 </Row>
@@ -35,5 +33,4 @@ this.setState({clickCounter: this.state.clickCounter + 1})
     } 
   }   
   
-
 export default Main;

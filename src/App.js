@@ -11,15 +11,11 @@ function App() {
       <div><strong><Header/></strong></div>
      <br/>
 
-
 <div><Main/></div>
-
-
 
      <br/>
      <div><Footer/></div>
-          
-          
+               
     </div>
   );
 }
