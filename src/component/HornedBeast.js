@@ -22,7 +22,7 @@ class HornedBeast extends React.Component {
       
       <div >
        
-<Card style={{ width: '18rem',padding: 10}} show={this.state.show}>
+<Card style={{ width: '18rem',padding: 10}} >
       <Card.Img src={this.props.image_url} width="200" onClick={this.handleClick}/>
       <Card.Body>
       <Card.Text style={{ color: 'black' }}>
