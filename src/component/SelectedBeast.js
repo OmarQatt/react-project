@@ -39,10 +39,17 @@ class SelectedBeast extends React.Component {
               {this.props.title}
                </Modal.Title>
               <Modal.Body>
+                <p>
                {this.props.description}
-               {this.props.keywords}
-               {this.props.hoorns}
+               </p>
+               <p>
+              {this.props.keyword}
+              </p>
+              <p>
+              {this.props.horns}
+              </p>
               </Modal.Body>
+              
               <Modal.Footer>
                 <Button variant="secondary" onClick={(e) => this.closeModal(e)}>
                   Close
